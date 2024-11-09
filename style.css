@@ -1,0 +1,625 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #7e909b;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 6;
+    margin-right: 8cm;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    margin: 1em auto;
+    max-width: 1000px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+section p, ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #424a58;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #44c5ecb9;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#chat-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #6e8694e7;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#chat-window {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-header {
+    background-color: #4f82b6da;
+    color: white;
+    padding: 10px;
+}
+
+#chat-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+#chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#chat-input button {
+    margin-left: 10px;
+}
+
+/* Chatbot Styles */
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#chat-body {
+    padding: 10px;
+    display: none;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.user-message, .bot-message {
+    margin: 10px 0;
+}
+
+.user-message {
+    text-align: right;
+    color: rgba(90, 112, 187, 0.671);
+}
+
+.bot-message {
+    text-align: left;
+    color: green;
+}
+
+#userInput {
+    width: 80%;
+    padding: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Add this to your style.css file */
+footer {
+     /* Adjust value as needed */
+    padding: 20px;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #8a94a0b7; /* Example background */
+}
+
+/* Apply background image to the body of the homepage */
+body {
+    background-image: url('biotech-bg3.jpg'); /* Adjust the path based on your file structure */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background fixed when scrolling */
+    color: #1b1b1dec; /* Sets text color to white for contrast */
+}
+
+/* Ensure content is readable over the background */
+.container {
+    background-color: rgba(197, 202, 202, 0.87); /* Adds a semi-transparent background to the content */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style for the header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Background color of header */
+}
+
+/* Style for the logo */
+.logo {
+    width: 100px; /* Adjust size */
+    height: auto;
+}
+
+/* Optional: Style for the navigation links (if you have any) */
+nav {
+    display: flex;
+    gap: 0px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Meet Our Team section styles */
+#meet-our-team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Background color of the section */
+}
+
+#meet-our-team h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 1em;
+}
+
+
+/* Partners section styling */
+#partners {
+    text-align: center;
+    padding: 50x 0x;
+    background-color: #f2f2f2; /* Background color for the section */
+}
+
+#partners h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#partners p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.partner {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.partner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Keeps logo proportions */
+}
+
+.partner:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+
+/* Wall of Fame section styling */
+#wall-of-fame {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e8f6f3; /* Background color for the section */
+    width: 100%;
+}
+
+#wall-of-fame .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#wall-of-fame h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#wall-of-fame p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.fame-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.fame-member {
+    flex: 1 1 45%; /* Each member takes up 45% of the container width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.fame-member h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007b5e;
+}
+
+.fame-member ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.fame-member ul li {
+    margin-bottom: 10px;
+}
+
+.research-link {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.research-link:hover {
+    color: #003f8b;
+    text-decoration: underline;
+}
+
+
+/* Empowering Youth Section */
+#homepage {
+    padding: 50px 0;
+    background-color: #f0f8ff;
+}
+
+#homepage h3 {
+    margin-top: 5px;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    color: #333;
+    margin:1cm;
+}
+
+#homepage p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #555;
+    margin: 1cm;
+    max-width: 1000%;
+}
+
+/* Carousel Image Styling */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Data Analytics Section Styling */
+#data-analytics {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#data-analytics h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#data-analytics p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.counter {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.counter i {
+    color: #737577e3;
+    margin-bottom: 10px;
+}
+
+.counter h3 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.counter p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.counter:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.596);
+}
+
+
+
+/* General Header Styling */
+header {
+    background-color: #494a4d;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 6cm;
+    padding: 1em 0;
+  }
+  
+  /* Logo Styling */
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Navigation Links Styling */
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-right: 7cm;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #25dbf3;
+  }
+  
+  /* Menu Icon for Mobile */
+  .menu-icon {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Make navigation hidden on smaller screens */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #4f5050;
+      width: 200px;
+      text-align: right;
+      padding: 10px;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    /* Display the menu icon on smaller screens */
+    .menu-icon {
+      display: block;
+    }
+  
+    /* Show the menu when the icon is clicked */
+    nav ul.active {
+      display: flex;
+    }
+  }
+  
+  
+
+  /* Footer Styling */
+footer {
+    background-color: #494848;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info, .social-media, .privacy-policy {
+    margin: 10px;
+  }
+  
+  .contact-info a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Social Media Icons */
+  .social-media a {
+    margin: 0 10px;
+    font-size: 2em;
+  }
+  
+  .social-media a:hover {
+    color: #42edf3;
+  }
+  
+ 
+  
+  /* Privacy Policy Hidden Text */
+  .hidden {
+    display: none;
+  }
+  
+  .privacy-policy p {
+    text-align: left;
+    padding: 10px;
+    background-color: #545b5ee8;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  /* Responsive footer layout */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
